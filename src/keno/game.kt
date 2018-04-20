@@ -45,8 +45,6 @@ data class Rectangle(val x: Double, val y: Double, val w: Double, val h: Double)
 
 abstract class Collider(val box: Rectangle) {
 
-    abstract fun onClick(state: GameState)
-
     fun collides(x: Double, y: Double): Boolean{
         var left = box.x
         var right = box.x + box.w
@@ -66,18 +64,16 @@ abstract class MenuButton(val rect: Rectangle) : Collider(rect) {
     abstract fun onDrawing()
     abstract fun onRecap()
 
-
-}
-
-open class PlayButton(val dimensions: Rectangle) : MenuButton(dimensions) {
-
-    override fun onClick(state: GameState) {
+    fun onClick(state: GameState) {
         when(state){
             GameState.PICKS -> onPicks()
             GameState.DRAWING -> onDrawing()
             GameState.POSTDRAW -> onRecap()
         }
     }
+}
+
+open class PlayButton(val dimensions: Rectangle) : MenuButton(dimensions) {
 
     override fun onDrawing() {
 
@@ -95,19 +91,12 @@ open class PlayButton(val dimensions: Rectangle) : MenuButton(dimensions) {
 
 open class QuickPickButton(val dimensions: Rectangle) : MenuButton(dimensions){
     override fun onPicks() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onDrawing() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onRecap() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun onClick(state: GameState) {
-
     }
 
 }
