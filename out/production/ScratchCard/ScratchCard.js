@@ -3,14 +3,13 @@ if (typeof kotlin === 'undefined') {
 }
 var ScratchCard = function (_, Kotlin) {
   'use strict';
-  var Kind_INTERFACE = Kotlin.Kind.INTERFACE;
-  var println = Kotlin.kotlin.io.println_s8jyv4$;
-  var Kind_CLASS = Kotlin.Kind.CLASS;
   var Enum = Kotlin.kotlin.Enum;
+  var Kind_CLASS = Kotlin.Kind.CLASS;
   var throwISE = Kotlin.throwISE;
   var throwCCE = Kotlin.throwCCE;
   var Unit = Kotlin.kotlin.Unit;
   var listOf = Kotlin.kotlin.collections.listOf_i5x0yv$;
+  var println = Kotlin.kotlin.io.println_s8jyv4$;
   var math = Kotlin.kotlin.math;
   var to = Kotlin.kotlin.to_ujzrz7$;
   var mapOf = Kotlin.kotlin.collections.mapOf_x2b85n$;
@@ -18,34 +17,20 @@ var ScratchCard = function (_, Kotlin) {
   var emptyMap = Kotlin.kotlin.collections.emptyMap_q3lmfv$;
   var sortedDescending = Kotlin.kotlin.collections.sortedDescending_exjks8$;
   var ensureNotNull = Kotlin.ensureNotNull;
+  var Kind_INTERFACE = Kotlin.Kind.INTERFACE;
+  var throwUPAE = Kotlin.throwUPAE;
   Keno$GameState.prototype = Object.create(Enum.prototype);
   Keno$GameState.prototype.constructor = Keno$GameState;
   Keno$ButtonType.prototype = Object.create(Enum.prototype);
   Keno$ButtonType.prototype.constructor = Keno$ButtonType;
-  function GameCtrl() {
-    this.game = new Keno();
-  }
-  function GameCtrl$Game() {
-  }
-  GameCtrl$Game.$metadata$ = {
-    kind: Kind_INTERFACE,
-    simpleName: 'Game',
-    interfaces: []
-  };
-  GameCtrl.prototype.onIntro = function () {
-    this.game.showIntro();
-  };
-  GameCtrl.prototype.onStart = function () {
-    this.game.start();
-  };
-  GameCtrl.prototype.onInstructionsClick = function () {
-    println(this.game.instructions());
-  };
-  GameCtrl.$metadata$ = {
-    kind: Kind_CLASS,
-    simpleName: 'GameCtrl',
-    interfaces: []
-  };
+  MenuButton.prototype = Object.create(Collider.prototype);
+  MenuButton.prototype.constructor = MenuButton;
+  PlayButton.prototype = Object.create(MenuButton.prototype);
+  PlayButton.prototype.constructor = PlayButton;
+  QuickPickButton.prototype = Object.create(MenuButton.prototype);
+  QuickPickButton.prototype.constructor = QuickPickButton;
+  GameState.prototype = Object.create(Enum.prototype);
+  GameState.prototype.constructor = GameState;
   var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_ww73n8$;
   function Keno() {
     this.pickColor = '#AAABA5';
@@ -108,7 +93,7 @@ var ScratchCard = function (_, Kotlin) {
         return Keno$GameState$Drawing_getInstance();
       case 'AfterDraw':
         return Keno$GameState$AfterDraw_getInstance();
-      default:throwISE('No enum constant kenologic.Keno.GameState.' + name);
+      default:throwISE('No enum constant keno.Keno.GameState.' + name);
     }
   }
   Keno$GameState.valueOf_61zpoe$ = Keno$GameState$valueOf;
@@ -156,13 +141,10 @@ var ScratchCard = function (_, Kotlin) {
         return Keno$ButtonType$QUICK_PICK_getInstance();
       case 'RESTART':
         return Keno$ButtonType$RESTART_getInstance();
-      default:throwISE('No enum constant kenologic.Keno.ButtonType.' + name);
+      default:throwISE('No enum constant keno.Keno.ButtonType.' + name);
     }
   }
   Keno$ButtonType.valueOf_61zpoe$ = Keno$ButtonType$valueOf;
-  Keno.prototype.showIntro = function () {
-    println('show intro');
-  };
   function Keno$start$lambda(this$Keno) {
     return function (event) {
       this$Keno.onCanvasClicked_0(event);
@@ -175,9 +157,6 @@ var ScratchCard = function (_, Kotlin) {
     var ctx = Kotlin.isType(tmp$_0 = canvas.getContext('2d'), CanvasRenderingContext2D) ? tmp$_0 : throwCCE();
     canvas.addEventListener('click', Keno$start$lambda(this));
     this.redraw_0();
-  };
-  Keno.prototype.instructions = function () {
-    return 'here are the instructions';
   };
   Keno.prototype.redraw_0 = function () {
     var tmp$, tmp$_0;
@@ -707,7 +686,7 @@ var ScratchCard = function (_, Kotlin) {
   Keno$Button.prototype.component5 = function () {
     return this.type;
   };
-  Keno$Button.prototype.copy_qiexj8$ = function (x, y, w, h, type) {
+  Keno$Button.prototype.copy_df2hgc$ = function (x, y, w, h, type) {
     return new Keno$Button(x === void 0 ? this.x : x, y === void 0 ? this.y : y, w === void 0 ? this.w : w, h === void 0 ? this.h : h, type === void 0 ? this.type : type);
   };
   Keno$Button.prototype.toString = function () {
@@ -731,16 +710,253 @@ var ScratchCard = function (_, Kotlin) {
   Keno.$metadata$ = {
     kind: Kind_CLASS,
     simpleName: 'Keno',
-    interfaces: [GameCtrl$Game]
+    interfaces: []
+  };
+  function Game() {
+    this.view = new KenoView();
+    this.presenter = new KenoPresenter(this.view);
+  }
+  function Game$Presenter() {
+  }
+  Game$Presenter.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'Presenter',
+    interfaces: []
+  };
+  function Game$View() {
+  }
+  Game$View.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'View',
+    interfaces: []
+  };
+  Game.prototype.onStart = function () {
+    this.view.onStart();
+  };
+  Game.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'Game',
+    interfaces: []
+  };
+  function KenoPresenter(view) {
+    this.view = view;
+  }
+  KenoPresenter.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'KenoPresenter',
+    interfaces: [Game$Presenter]
+  };
+  function KenoView() {
+    this.playBtn_3n42fh$_0 = this.playBtn_3n42fh$_0;
+    this.quickPick_svvgo7$_0 = this.quickPick_svvgo7$_0;
+  }
+  Object.defineProperty(KenoView.prototype, 'playBtn', {
+    get: function () {
+      if (this.playBtn_3n42fh$_0 == null)
+        return throwUPAE('playBtn');
+      return this.playBtn_3n42fh$_0;
+    },
+    set: function (playBtn) {
+      this.playBtn_3n42fh$_0 = playBtn;
+    }
+  });
+  Object.defineProperty(KenoView.prototype, 'quickPick', {
+    get: function () {
+      if (this.quickPick_svvgo7$_0 == null)
+        return throwUPAE('quickPick');
+      return this.quickPick_svvgo7$_0;
+    },
+    set: function (quickPick) {
+      this.quickPick_svvgo7$_0 = quickPick;
+    }
+  });
+  KenoView.prototype.onStart = function () {
+    this.playBtn = new PlayButton(new Rectangle(0.0, 0.0, 5.0, 5.0));
+    this.quickPick = new QuickPickButton(new Rectangle(0.0, 0.0, 5.0, 5.0));
+  };
+  KenoView.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'KenoView',
+    interfaces: [Game$View]
+  };
+  function Rectangle(x, y, w, h) {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+  }
+  Rectangle.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'Rectangle',
+    interfaces: []
+  };
+  Rectangle.prototype.component1 = function () {
+    return this.x;
+  };
+  Rectangle.prototype.component2 = function () {
+    return this.y;
+  };
+  Rectangle.prototype.component3 = function () {
+    return this.w;
+  };
+  Rectangle.prototype.component4 = function () {
+    return this.h;
+  };
+  Rectangle.prototype.copy_6y0v78$ = function (x, y, w, h) {
+    return new Rectangle(x === void 0 ? this.x : x, y === void 0 ? this.y : y, w === void 0 ? this.w : w, h === void 0 ? this.h : h);
+  };
+  Rectangle.prototype.toString = function () {
+    return 'Rectangle(x=' + Kotlin.toString(this.x) + (', y=' + Kotlin.toString(this.y)) + (', w=' + Kotlin.toString(this.w)) + (', h=' + Kotlin.toString(this.h)) + ')';
+  };
+  Rectangle.prototype.hashCode = function () {
+    var result = 0;
+    result = result * 31 + Kotlin.hashCode(this.x) | 0;
+    result = result * 31 + Kotlin.hashCode(this.y) | 0;
+    result = result * 31 + Kotlin.hashCode(this.w) | 0;
+    result = result * 31 + Kotlin.hashCode(this.h) | 0;
+    return result;
+  };
+  Rectangle.prototype.equals = function (other) {
+    return this === other || (other !== null && (typeof other === 'object' && (Object.getPrototypeOf(this) === Object.getPrototypeOf(other) && (Kotlin.equals(this.x, other.x) && Kotlin.equals(this.y, other.y) && Kotlin.equals(this.w, other.w) && Kotlin.equals(this.h, other.h)))));
+  };
+  function Collider(box) {
+    this.box = box;
+  }
+  Collider.prototype.collides_lu1900$ = function (x, y) {
+    var left = this.box.x;
+    var right = this.box.x + this.box.w;
+    var top = this.box.y;
+    var bottom = this.box.y + this.box.h;
+    if (right >= x && left <= x && bottom >= y && top <= y) {
+      return true;
+    }
+    return false;
+  };
+  Collider.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'Collider',
+    interfaces: []
+  };
+  function MenuButton(rect) {
+    Collider.call(this, rect);
+    this.rect = rect;
+  }
+  MenuButton.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'MenuButton',
+    interfaces: [Collider]
+  };
+  function PlayButton(dimensions) {
+    MenuButton.call(this, dimensions);
+    this.dimensions = dimensions;
+  }
+  PlayButton.prototype.onClick_2mgmwk$ = function (state) {
+    switch (state.name) {
+      case 'PICKS':
+        this.onPicks();
+        break;
+      case 'DRAWING':
+        this.onDrawing();
+        break;
+      case 'POSTDRAW':
+        this.onRecap();
+        break;
+    }
+  };
+  PlayButton.prototype.onDrawing = function () {
+  };
+  PlayButton.prototype.onRecap = function () {
+  };
+  PlayButton.prototype.onPicks = function () {
+  };
+  PlayButton.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'PlayButton',
+    interfaces: [MenuButton]
+  };
+  function QuickPickButton(dimensions) {
+    MenuButton.call(this, dimensions);
+    this.dimensions = dimensions;
+  }
+  var NotImplementedError_init = Kotlin.kotlin.NotImplementedError;
+  QuickPickButton.prototype.onPicks = function () {
+    throw new NotImplementedError_init('An operation is not implemented: ' + 'not implemented');
+  };
+  QuickPickButton.prototype.onDrawing = function () {
+    throw new NotImplementedError_init('An operation is not implemented: ' + 'not implemented');
+  };
+  QuickPickButton.prototype.onRecap = function () {
+    throw new NotImplementedError_init('An operation is not implemented: ' + 'not implemented');
+  };
+  QuickPickButton.prototype.onClick_2mgmwk$ = function (state) {
+  };
+  QuickPickButton.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'QuickPickButton',
+    interfaces: [MenuButton]
+  };
+  function GameState(name, ordinal) {
+    Enum.call(this);
+    this.name$ = name;
+    this.ordinal$ = ordinal;
+  }
+  function GameState_initFields() {
+    GameState_initFields = function () {
+    };
+    GameState$PICKS_instance = new GameState('PICKS', 0);
+    GameState$DRAWING_instance = new GameState('DRAWING', 1);
+    GameState$POSTDRAW_instance = new GameState('POSTDRAW', 2);
+  }
+  var GameState$PICKS_instance;
+  function GameState$PICKS_getInstance() {
+    GameState_initFields();
+    return GameState$PICKS_instance;
+  }
+  var GameState$DRAWING_instance;
+  function GameState$DRAWING_getInstance() {
+    GameState_initFields();
+    return GameState$DRAWING_instance;
+  }
+  var GameState$POSTDRAW_instance;
+  function GameState$POSTDRAW_getInstance() {
+    GameState_initFields();
+    return GameState$POSTDRAW_instance;
+  }
+  GameState.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GameState',
+    interfaces: [Enum]
+  };
+  function GameState$values() {
+    return [GameState$PICKS_getInstance(), GameState$DRAWING_getInstance(), GameState$POSTDRAW_getInstance()];
+  }
+  GameState.values = GameState$values;
+  function GameState$valueOf(name) {
+    switch (name) {
+      case 'PICKS':
+        return GameState$PICKS_getInstance();
+      case 'DRAWING':
+        return GameState$DRAWING_getInstance();
+      case 'POSTDRAW':
+        return GameState$POSTDRAW_getInstance();
+      default:throwISE('No enum constant keno.GameState.' + name);
+    }
+  }
+  GameState.valueOf_61zpoe$ = GameState$valueOf;
+  function BoardPosition(dimensions) {
+    this.dimensions = dimensions;
+  }
+  BoardPosition.prototype.onClick = function () {
+  };
+  BoardPosition.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'BoardPosition',
+    interfaces: []
   };
   function main(args) {
-    var ctrl = new GameCtrl();
-    ctrl.onIntro();
-    ctrl.onStart();
-    ctrl.onInstructionsClick();
+    var keno = new Keno();
+    keno.start();
   }
-  GameCtrl.Game = GameCtrl$Game;
-  _.GameCtrl = GameCtrl;
   Object.defineProperty(Keno$GameState, 'Pick', {
     get: Keno$GameState$Pick_getInstance
   });
@@ -763,8 +979,29 @@ var ScratchCard = function (_, Kotlin) {
   Keno.ButtonType = Keno$ButtonType;
   Keno.Rect = Keno$Rect;
   Keno.Button = Keno$Button;
-  var package$kenologic = _.kenologic || (_.kenologic = {});
-  package$kenologic.Keno = Keno;
+  var package$keno = _.keno || (_.keno = {});
+  package$keno.Keno = Keno;
+  Game.Presenter = Game$Presenter;
+  Game.View = Game$View;
+  package$keno.Game = Game;
+  package$keno.KenoPresenter = KenoPresenter;
+  package$keno.KenoView = KenoView;
+  package$keno.Rectangle = Rectangle;
+  package$keno.Collider = Collider;
+  package$keno.MenuButton = MenuButton;
+  package$keno.PlayButton = PlayButton;
+  package$keno.QuickPickButton = QuickPickButton;
+  Object.defineProperty(GameState, 'PICKS', {
+    get: GameState$PICKS_getInstance
+  });
+  Object.defineProperty(GameState, 'DRAWING', {
+    get: GameState$DRAWING_getInstance
+  });
+  Object.defineProperty(GameState, 'POSTDRAW', {
+    get: GameState$POSTDRAW_getInstance
+  });
+  package$keno.GameState = GameState;
+  package$keno.BoardPosition = BoardPosition;
   _.main_kand9s$ = main;
   main([]);
   Kotlin.defineModule('ScratchCard', _);

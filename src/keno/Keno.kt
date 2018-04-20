@@ -1,4 +1,4 @@
-package kenologic
+package keno
 
 import org.w3c.dom.CanvasRenderingContext2D
 import org.w3c.dom.HTMLCanvasElement
@@ -7,10 +7,9 @@ import org.w3c.dom.events.MouseEvent
 import kotlin.browser.document
 import kotlin.browser.window
 import kotlin.js.Math
-import kotlin.math.nextTowards
 
 
-class Keno : GameCtrl.Game {
+class Keno {
 
     val pickColor = "#AAABA5"
     val drawnColor = "#EFEBE0"
@@ -38,11 +37,7 @@ class Keno : GameCtrl.Game {
     var menuBtns = mutableListOf<Button>()
     var roundsClickRects = mutableListOf<Rect>()
 
-    override fun showIntro() {
-        println("show intro")
-    }
-
-    override fun start() {
+    fun start() {
         val canvas = document.getElementById("game") as HTMLCanvasElement
 
         val ctx = canvas.getContext("2d") as CanvasRenderingContext2D
@@ -50,10 +45,6 @@ class Keno : GameCtrl.Game {
         canvas.addEventListener("click", { event -> onCanvasClicked(event)})
 
         redraw()
-    }
-
-    override fun instructions(): String {
-        return "here are the instructions"
     }
 
     private fun redraw(){

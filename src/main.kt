@@ -1,13 +1,9 @@
-import kotlin.browser.document
+import keno.Keno
 
 fun main(args: Array<String>){
 
-    var ctrl = GameCtrl()
+    var keno = Keno()
 
-    ctrl.onIntro()
-
-    ctrl.onStart()
-
-    ctrl.onInstructionsClick()
+    keno.start()
 
 }
