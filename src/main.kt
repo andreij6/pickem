@@ -1,9 +1,10 @@
+import keno.Game
 import keno.Keno
 
 fun main(args: Array<String>){
 
-    var keno = Keno()
+    var keno = Game()
 
-    keno.start()
+    keno.onStart()
 
 }

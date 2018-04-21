@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd62a3ca-20ac-4397-a130-25663ec94a0d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScratchCard/ScratchCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScratchCard/ScratchCard.meta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScratchCard/ScratchCard/keno/keno.kjsm" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScratchCard/ScratchCard/keno/keno.kjsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScratchCard/ScratchCard/kenologic/kenologic.kjsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScratchCard/lib/kotlin.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScratchCard/lib/kotlin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ScratchCard/lib/kotlin.meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ScratchCard/lib/kotlin.meta.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/keno/game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/keno/game.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,71 +23,123 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Keno.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/keno/Keno.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="498" column="22" selection-start-line="496" selection-start-column="7" selection-end-line="505" selection-end-column="20" />
-              <folding>
-                <element signature="e#19#252#0" expanded="true" />
-                <element signature="n#!!block;n#ButtonType#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#start#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#redraw#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#roundsMenu#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#onCanvasClicked#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#selectRandom#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#reselect#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#board#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#sideMenu#0;n#!!block;n#Keno#0" />
-                <element signature="e#7216#9005#0" />
-                <element signature="n#!!block;n#updatePayout#0;n#!!block;n#Keno#0" />
-                <element signature="n#!!block;n#collides#1;n#!!block;n#Keno#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/keno/game.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!block;n#checkCollision#0;n#!!block;n#Collider#0" />
-                <element signature="n#!!block;n#PlayButton#0" />
-                <element signature="n#!!block;n#onDrawing#0;n#!!block;n#PlayButton#0" />
-                <element signature="n#!!block;n#onPostDraw#0;n#!!block;n#PlayButton#0" />
-                <element signature="n#!!block;n#onPicks#0;n#!!block;n#PlayButton#0" />
-                <element signature="n#!!block;n#GameState#0" />
-                <element signature="n#!!block;n#BoardPosition#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="main.kt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#0#33#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="game.kt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/keno/game.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="252" column="19" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#15#271#0" expanded="true" />
+                    <element signature="n#!!block;n#onStart#0;n#!!block;n#Game#0" />
+                    <element signature="n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#addView#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#drawNumbers#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#executeRound#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#clearDrawn#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#quickPicks#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#clearPicks#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#clearAll#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#select#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#getWager#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#getSelectionCount#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#setRounds#0;n#!!block;n#KenoPresenter#0" />
+                    <element signature="n#!!block;n#ClickListener#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#KenoView#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#onStart#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#drawRounds#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#onClick#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#selectionUpdated#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#setGameState#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#drawPosition#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#drawnNumbers#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#redraw#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#highlight#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#resize#0;n#!!block;n#KenoView#0" />
+                    <element signature="n#!!block;n#Collider#0" />
+                    <element signature="n#!!block;n#Selectable#0" />
+                    <element signature="n#!!block;n#PlayButton#0;n#!!block;n#PlayButton#0" />
+                    <element signature="n#!!block;n#onDrawing#0;n#!!block;n#PlayButton#0" />
+                    <element signature="n#!!block;n#onRecap#0;n#!!block;n#PlayButton#0" />
+                    <element signature="n#!!block;n#onDrawing#0;n#!!block;n#QuickPickButton#0" />
+                    <element signature="n#!!block;n#ClearButton#0;n#!!block;n#ClearButton#0" />
+                    <element signature="n#!!block;n#NumberPosition#0" />
+                    <element signature="n#!!block;n#NumberPosition#0;n#!!block;n#NumberPosition#0" />
+                    <element signature="n#!!block;n#onPicks#0;n#!!block;n#NumberPosition#0" />
+                    <element signature="n#!!block;n#onDrawing#0;n#!!block;n#NumberPosition#0" />
+                    <element signature="n#!!block;n#onRecap#0;n#!!block;n#NumberPosition#0" />
+                    <element signature="n#!!block;n#draw#0;n#!!block;n#NumberPosition#0" />
+                    <element signature="n#!!block;n#deselect#0;n#!!block;n#NumberPosition#0" />
+                    <element signature="e#8608#8624#1" />
+                    <element signature="n#!!block;n#PayoutMenu#0" />
+                    <element signature="n#!!block;n#PayoutMenu#0;n#!!block;n#PayoutMenu#0" />
+                    <element signature="n#!!block;n#generatePayoutMap#0;n#!!block;n#PayoutMenu#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/styles.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="62" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Keno.kt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/keno/Keno.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="177" column="16" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#14#245#0" expanded="true" />
+                    <element signature="n#!!block;n#ButtonType#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#start#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#redraw#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#roundsMenu#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#board#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#sideMenu#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#chooseNumber#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#updatePayout#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#collides#0;n#!!block;n#Keno#0" />
+                    <element signature="n#!!block;n#collides#1;n#!!block;n#Keno#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,8 +161,22 @@
       <find>redra</find>
       <find>QUICK_PICK</find>
       <find>chooseNumber</find>
-      <find>font</find>
       <find>collision</find>
+      <find>ctx =</find>
+      <find>Event</find>
+      <find>highlig</find>
+      <find>80</find>
+      <find>getElementBy</find>
+      <find>getElement</find>
+      <find>format</find>
+      <find>fillText</find>
+      <find>drawNumbers</find>
+      <find>positions</find>
+      <find>setTime</find>
+      <find>drawnNumbers</find>
+      <find>font</find>
+      <find>Ar</find>
+      <find>HIT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,19 +188,21 @@
         <option value="$PROJECT_DIR$/src/Greeter.kt" />
         <option value="$PROJECT_DIR$/src/Keno/Keno.kt" />
         <option value="$PROJECT_DIR$/src/keno_logic/Keno.kt" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/GameCtrl.kt" />
-        <option value="$PROJECT_DIR$/src/main.kt" />
         <option value="$PROJECT_DIR$/src/kenologic/Keno.kt" />
-        <option value="$PROJECT_DIR$/src/keno/Keno.kt" />
         <option value="$PROJECT_DIR$/src/keno/game.java" />
+        <option value="$PROJECT_DIR$/keno.css" />
+        <option value="$PROJECT_DIR$/src/keno/Keno.kt" />
+        <option value="$PROJECT_DIR$/src/main.kt" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles.css" />
         <option value="$PROJECT_DIR$/src/keno/game.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="718" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -132,24 +210,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ScratchCard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScratchCard" type="462c0819:PsiDirectoryNode" />
+              <item name="pickem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pickem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ScratchCard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScratchCard" type="462c0819:PsiDirectoryNode" />
+              <item name="pickem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pickem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ScratchCard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScratchCard" type="462c0819:PsiDirectoryNode" />
+              <item name="pickem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pickem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="keno" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -157,10 +234,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -250,35 +329,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.31757575" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.31678832" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32969698" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5147929" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965687" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19932885" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32846716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.12088698" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -286,7 +365,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -294,13 +373,97 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Greeter.java">
+    <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/keno/Keno.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="498" column="22" selection-start-line="496" selection-start-column="7" selection-end-line="505" selection-end-column="20" />
+          <folding>
+            <element signature="e#14#245#0" expanded="true" />
+            <element signature="n#!!block;n#ButtonType#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#start#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#redraw#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#roundsMenu#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#board#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#sideMenu#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#chooseNumber#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#updatePayout#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#collides#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#collides#1;n#!!block;n#Keno#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/keno/game.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+          <folding>
+            <element signature="e#15#271#0" expanded="true" />
+            <element signature="n#!!block;n#onStart#0;n#!!block;n#Game#0" />
+            <element signature="n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#addView#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#drawNumbers#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#executeRound#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#clearDrawn#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#quickPicks#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#clearPicks#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#clearAll#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#select#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#getWager#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#getSelectionCount#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#setRounds#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#ClickListener#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#KenoView#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#onStart#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#drawRounds#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#onClick#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#selectionUpdated#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#setGameState#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#drawPosition#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#drawnNumbers#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#redraw#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#highlight#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#resize#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#Collider#0" />
+            <element signature="n#!!block;n#Selectable#0" />
+            <element signature="n#!!block;n#PlayButton#0;n#!!block;n#PlayButton#0" />
+            <element signature="n#!!block;n#onDrawing#0;n#!!block;n#PlayButton#0" />
+            <element signature="n#!!block;n#onRecap#0;n#!!block;n#PlayButton#0" />
+            <element signature="n#!!block;n#onDrawing#0;n#!!block;n#QuickPickButton#0" />
+            <element signature="n#!!block;n#ClearButton#0;n#!!block;n#ClearButton#0" />
+            <element signature="n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#NumberPosition#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#onPicks#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#onDrawing#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#onRecap#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#draw#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#deselect#0;n#!!block;n#NumberPosition#0" />
+            <element signature="e#8608#8624#1" />
+            <element signature="n#!!block;n#PayoutMenu#0" />
+            <element signature="n#!!block;n#PayoutMenu#0;n#!!block;n#PayoutMenu#0" />
+            <element signature="n#!!block;n#generatePayoutMap#0;n#!!block;n#PayoutMenu#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Greeter.java" />
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-js-sources.jar!/kotlin/generated/org.w3c.dom.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -315,64 +478,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameCtrl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameCtrl.kt" />
     <entry file="file://$PROJECT_DIR$/src/keno/Keno.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="498" column="22" selection-start-line="496" selection-start-column="7" selection-end-line="505" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="177" column="16" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
           <folding>
-            <element signature="e#19#252#0" expanded="true" />
+            <element signature="e#14#245#0" expanded="true" />
             <element signature="n#!!block;n#ButtonType#0;n#!!block;n#Keno#0" />
             <element signature="n#!!block;n#start#0;n#!!block;n#Keno#0" />
             <element signature="n#!!block;n#redraw#0;n#!!block;n#Keno#0" />
             <element signature="n#!!block;n#roundsMenu#0;n#!!block;n#Keno#0" />
-            <element signature="n#!!block;n#onCanvasClicked#0;n#!!block;n#Keno#0" />
-            <element signature="n#!!block;n#selectRandom#0;n#!!block;n#Keno#0" />
-            <element signature="n#!!block;n#reselect#0;n#!!block;n#Keno#0" />
             <element signature="n#!!block;n#board#0;n#!!block;n#Keno#0" />
             <element signature="n#!!block;n#sideMenu#0;n#!!block;n#Keno#0" />
-            <element signature="e#7216#9005#0" />
+            <element signature="n#!!block;n#chooseNumber#0;n#!!block;n#Keno#0" />
             <element signature="n#!!block;n#updatePayout#0;n#!!block;n#Keno#0" />
+            <element signature="n#!!block;n#collides#0;n#!!block;n#Keno#0" />
             <element signature="n#!!block;n#collides#1;n#!!block;n#Keno#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="53" lean-forward="true" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/keno/game.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="252" column="19" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="19" />
           <folding>
-            <element signature="n#!!block;n#checkCollision#0;n#!!block;n#Collider#0" />
-            <element signature="n#!!block;n#PlayButton#0" />
+            <element signature="e#15#271#0" expanded="true" />
+            <element signature="n#!!block;n#onStart#0;n#!!block;n#Game#0" />
+            <element signature="n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#addView#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#drawNumbers#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#executeRound#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#clearDrawn#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#quickPicks#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#clearPicks#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#clearAll#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#select#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#getWager#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#getSelectionCount#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#setRounds#0;n#!!block;n#KenoPresenter#0" />
+            <element signature="n#!!block;n#ClickListener#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#KenoView#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#onStart#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#drawRounds#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#onClick#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#selectionUpdated#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#setGameState#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#drawPosition#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#drawnNumbers#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#redraw#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#highlight#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#resize#0;n#!!block;n#KenoView#0" />
+            <element signature="n#!!block;n#Collider#0" />
+            <element signature="n#!!block;n#Selectable#0" />
+            <element signature="n#!!block;n#PlayButton#0;n#!!block;n#PlayButton#0" />
             <element signature="n#!!block;n#onDrawing#0;n#!!block;n#PlayButton#0" />
-            <element signature="n#!!block;n#onPostDraw#0;n#!!block;n#PlayButton#0" />
-            <element signature="n#!!block;n#onPicks#0;n#!!block;n#PlayButton#0" />
-            <element signature="n#!!block;n#GameState#0" />
-            <element signature="n#!!block;n#BoardPosition#0" />
+            <element signature="n#!!block;n#onRecap#0;n#!!block;n#PlayButton#0" />
+            <element signature="n#!!block;n#onDrawing#0;n#!!block;n#QuickPickButton#0" />
+            <element signature="n#!!block;n#ClearButton#0;n#!!block;n#ClearButton#0" />
+            <element signature="n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#NumberPosition#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#onPicks#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#onDrawing#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#onRecap#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#draw#0;n#!!block;n#NumberPosition#0" />
+            <element signature="n#!!block;n#deselect#0;n#!!block;n#NumberPosition#0" />
+            <element signature="e#8608#8624#1" />
+            <element signature="n#!!block;n#PayoutMenu#0" />
+            <element signature="n#!!block;n#PayoutMenu#0;n#!!block;n#PayoutMenu#0" />
+            <element signature="n#!!block;n#generatePayoutMap#0;n#!!block;n#PayoutMenu#0" />
           </folding>
         </state>
       </provider>
